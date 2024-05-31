@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Maker</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            text-align: center;
+            font-size: large;
+            font-weight: bolder;
+            margin: 20px 20px;
+        }
+        main{
+            /* border: 1px solid black; */
+            height: 400px;
+            margin-top: 50px;
+        }
+        .box{
+            width: 250px;
+            height: 10%;
+            margin: 20px auto;
+            /* border: 1px solid yellow; */
+        }
+        .red{
+            background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+            box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+        }
+        .green{
+            background: linear-gradient(#55680D, #71F53E, #116C31);
+            box-shadow: 0 0 20px 0 green;
+        }
+        .blue{
+            background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+            box-shadow: 0 0 20px 0 blue;
+        }
+        .left{
+            display: inline-block;
+            width: 60px;
+            height: 100%;
+        }
+        .right{
+            display: inline-block;
+            width: 150px;
+            height: 100%;
+            border-left: 10px double rgba(0, 0, 0, 0.75);
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Css Color Makers</h1>
+    </header>
+    <main>
+        <div class="box red">
+            <span class="left"></span>
+            <span class="right"></span>
+        </div>
+        <div class="box green">
+            <span class="left"></span>
+            <span class="right"></span>
+        </div>
+        <div class="box blue">
+            <span class="left"></span>
+            <span class="right"></span>
+        </div>
+    </main>
+</body>
+</html>
